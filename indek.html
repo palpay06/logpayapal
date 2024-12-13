@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard PayPal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.ytimg.com/vi/Xw4fS0Byang/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: black;
+        }
+        .container {
+            background: black(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px black(0, 0, 0, 0.5),
+                        -20px -20px 60px black(255, 255, 255, 0.2);
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: black;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px); /* Mengurangi padding */
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+                        inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+            background-color: black(255, 255, 255, 0.2);
+            color: black;
+        }
+        button {
+            width: calc(100% - 20px); /* Mengurangi padding */
+            background-color: #0070ba;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #005f8a;
+        }
+        .logo {
+            width: 100px; /* Ukuran logo */
+            margin-bottom: 20px; /* Jarak antara logo dan teks */
+        }
+        .terms {
+            margin: 20px 0; /* Jarak antara checkbox dan elemen lainnya */
+            color: black; /* Warna teks checkbox */
+            font-size: 12px; /* Ukuran font */
+            text-align: left; /* Rata kiri */
+        }
+        .terms a {
+            color: #0070ba; /* Warna link */
+            text-decoration: none; /* Hilangkan garis bawah */
+        }
+        .terms a:hover {
+            text-decoration: underline; /* Garis bawah saat hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://logos-download.com/wp-content/uploads/2016/03/PayPal_horizontally_Logo_2014.png" alt="Logo PayPal" class="logo">
+    <h2>PayPal Login Account</h2>
+    <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Konfirmasi Password" required>
+        <div class="terms">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">Saya setuju dengan <a href="https://www.paypal.com/webapps/mpp/terms" target="_blank">syarat dan ketentuan</a> PayPal.</label>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
